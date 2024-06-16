@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    .logo{
+        max-width: 70px;
+        margin: 0;
+        padding: 0;
+    }
+    .logo:hover{
+        transform: scale(120%);
+        transition: .3s;
+    }
+   .hamburguesa{
+    display: none;
+   }
+}
+.navbar{
+ul{
+    display: flex;
+    li{
+        list-style: none;
+        padding: 15px;
+        margin: 10px;
+        color: black;
+    }
+    li:hover{
+        color:aquamarine;
+        scale: 100%;
+    }
+}
+}
+.carrito{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: rgb(248, 122, 170);
+    cursor: pointer;
+}
+.carrito :hover{
+    color: aquamarine;
+}
+.header-content{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0px 0px;
+    background-color: #8cd4e4;
+    img{
+        max-height: 500px;
+        min-width:200px;
+        padding: 0px 0px;
+    }
+}
+.header-txt{
+    background-color: #8cd4e4;
+    flex-basis: 40%;
+    padding: 0px;
+
+}
+.header-txt h1{
+    font-size: 70px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.fa-whatsapp{
+    width: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    cursor: pointer; 
+    color: rgb(32, 235, 167);
+    font-size: 35px;
+    text-shadow: 0 0 1px rgb(18, 17, 17);
+}
+.boton-1{
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    border: 1px solid rgb(248, 122, 170);
+    text-transform: uppercase;
+
+}
+.boton-1:hover{
+    background-color: rgb(248, 122, 170);
+}
+.boton-3{
+    display: inline-block;
+    padding: 4px 20px;
+    color: black;
+    border: 1px solid rgb(248, 122, 170);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.boton-3:hover{
+    background-color: rgb(248, 122, 170);
+}
+.pasteleria{
+    padding: 30px 0;
+}
+h2{
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.pasteleria-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.pasteleria-1{
+    flex-basis: calc(30% - 30px);
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f7fafa;
+    border-radius: 10px;
+}
+.pasteleria-1 img{
+    max-width: 170px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: #000000;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.product-txt p{
+    margin-bottom: 10px;
+}
+.precio{
+    color: rgb(248, 122, 170);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.logan-1{
+    flex-basis: 40%;
+    background: linear-gradient( 
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),
+    url(img/cuatro\ postres.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+}
+.logan-2{
+    flex-basis: 40%;
+    background: linear-gradient( 
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),
+    url(img/brownie\ fondo\.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+}
+.boton-2{
+    display: inline-block;
+    padding: 8px 30px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 60px;
+    img{
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    header{
+        .navbar{
+            display: none;
+    }
+    .menu{
+        .hamburguesa{
+            display: block;
+            color: rgb(248, 122, 170);
+            cursor: pointer;
+            font-size: 20px;
+            padding-right: 10px;
+        }
+    }
+ }
+}

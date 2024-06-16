@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    .logo{
+        max-width: 70px;
+        margin: 0;
+        padding: 0;
+    }
+    .logo:hover{
+        transform: scale(120%);
+        transition: .3s;
+    }
+    .hamburguesa{
+        display: none;
+       }
+}
+.navbar{
+ul{
+    display: flex;
+    li{
+        list-style: none;
+        padding: 15px;
+        margin: 10px;
+        color: black;
+    }
+    li:hover{
+        color:aquamarine;
+    }
+}
+}
+.carrito{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: rgb(248, 122, 170);
+    cursor: pointer;
+}
+.carrito :hover{
+    color: aquamarine;
+}
+.header-content{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 0 0px;
+    background-color: #8cd4e4;
+    img{
+        background-color: #8cd4e4;
+        max-height: 500px;
+        min-width: 200px;
+        padding: 0 px;
+    }
+}
+.header-txt{
+    background-color: #8cd4e4;
+    flex-basis: 40%;
+    padding: 40px;
+
+}
+.header-txt h1{
+    font-size: 70px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.fa-whatsapp{
+    width: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    cursor: pointer; 
+    color: rgb(32, 235, 167);
+    font-size: 35px;
+    text-shadow: 0 0 1px rgb(18, 17, 17);
+}
+main{
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+    p{
+        font-size: 20px;
+        padding: 15px 20px;
+        color:rgb(248, 122, 170) ;
+    }
+    .iconwhatsapp{
+        font-size: 20px;
+        border-radius: 25px;
+        color: #ffffff;
+        padding: 10px 40px;
+        background-color: rgb(248, 122, 170);
+    }
+    .iconwhatsapp:hover{
+        padding: 10px 40px;
+        background-color: rgb(32, 235, 167);
+    }
+}
+@media screen and (max-width: 720px){
+    header{
+        .navbar{
+            display: none;
+    }
+    .menu{
+        .hamburguesa{
+            display: block;
+            color: rgb(248, 122, 170);
+            cursor: pointer;
+            font-size: 20px;
+            padding-right: 10px;
+        }
+    }
+ }
+}
